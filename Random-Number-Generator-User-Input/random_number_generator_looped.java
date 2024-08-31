@@ -14,9 +14,15 @@ public class random_number_generator_looped {
         System.out.print("Enter the maximum value of RANDOM NUMBERS: ");
         int RNG_limit = scanner.nextInt();
 
-        for (int i = 0; i < number_of_random; i++){
-            int x = random.nextInt(RNG_limit + 1);
-            System.out.println(x);
+        System.out.print("Enter the number of LINES to generate: ");
+        int number_of_lines = scanner.nextInt();
+
+        for (int j = 0; j < number_of_lines; j++) {
+            for (int i = 0; i < number_of_random; i++) {
+                int x = random.nextInt(RNG_limit + 1);
+                System.out.print(x);
+            }
+            System.out.println();
         }
         scanner.close();
     }
