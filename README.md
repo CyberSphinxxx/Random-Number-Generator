@@ -1,1 +1,1 @@
-Random Number Generator using Java
+# Random Number Generator using Java
